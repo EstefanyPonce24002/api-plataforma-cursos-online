@@ -1,5 +1,21 @@
-# Ignore Gradle project-specific cache directory
-.gradle
+# Ignorar archivos y carpetas de Gradle
+.gradle/
+/build/
 
-# Ignore Gradle build output directory
-build
+# Ignorar archivos y carpetas del IDE IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de compilación de Java
+*.class
+*.jar
+
+# Ignorar archivos de configuración de Spring Boot
+*.log
