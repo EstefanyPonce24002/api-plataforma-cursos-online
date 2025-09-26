@@ -40,5 +40,11 @@ Este proyecto fue desarrollado por las integrantes del **Grupo 5** de la asignat
 * **Lenguaje:** Java
 * **Sistema de Construcción:** Gradle
 * **IDE:** IntelliJ IDEA
+* **Base de Datos:** (e configurará para este proyecto) 
 * **Control de Versiones:** Git & GitHub
+* **Librerías:** (Se configurarán para este proyecto)
+* * Spring Web 
+* Spring Data JPA 
+* Lombok 
+* JUnit 5 (para pruebas unitarias) 
 * **Framework:** Spring Boot (se configurará para este proyecto)
