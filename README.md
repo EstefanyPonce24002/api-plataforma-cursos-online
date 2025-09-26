@@ -37,7 +37,8 @@ Este proyecto fue desarrollado por las integrantes del **Grupo 5** de la asignat
 
 ## 👥 Tutor Asignado
 
-
+| Ing. Erick Adiel Trigueros Jerez | 
+---
 
 ## 🛠️ Tecnologías y Entorno
 
