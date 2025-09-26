@@ -43,7 +43,7 @@ Este proyecto fue desarrollado por las integrantes del **Grupo 5** de la asignat
 * **Base de Datos:** (e configurará para este proyecto) 
 * **Control de Versiones:** Git & GitHub
 * **Librerías:** (Se configurarán para este proyecto)
-* * Spring Web 
+* Spring Web 
 * Spring Data JPA 
 * Lombok 
 * JUnit 5 (para pruebas unitarias) 
