@@ -6,7 +6,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.ues.api.plataformacursos.dto.InscripcionDTO; // Importación del DTO
 import org.ues.api.plataformacursos.model.*;
 import org.ues.api.plataformacursos.repository.*;
-import org.ues.api.plataformacursos.exception.NotFoundException;
+
 import java.util.List;
 import java.util.stream.Collectors;
 

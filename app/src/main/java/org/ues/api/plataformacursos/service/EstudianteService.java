@@ -6,8 +6,6 @@ import org.springframework.transaction.annotation.Transactional;
 import org.ues.api.plataformacursos.dto.EstudianteDTO;
 import org.ues.api.plataformacursos.model.Estudiante;
 import org.ues.api.plataformacursos.repository.EstudianteRepository;
-import org.ues.api.plataformacursos.exception.NotFoundException;
-import org.ues.api.plataformacursos.model.Curso; // Importación necesaria para mapear CursosIds
 
 import java.util.List;
 import java.util.stream.Collectors;
