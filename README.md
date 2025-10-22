@@ -49,7 +49,7 @@ Este proyecto fue desarrollado por las integrantes del **Grupo 5** de la asignat
 * **IDE:** [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 * **Base de Datos:** [PostgreSQL](https://www.postgresql.org/)
 * **Control de Versiones:** [Git](https://git-scm.com/) & [GitHub](https://github.com/)
-* **Librerías:** *(Se configurarán para este proyecto)*
+* **Librerías:**
   * [Spring Web](https://spring.io/projects/spring-framework)
   * [Spring Data JPA](https://spring.io/projects/spring-data-jpa)
   * [Lombok](https://projectlombok.org/)
