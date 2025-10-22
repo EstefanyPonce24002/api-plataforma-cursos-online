@@ -31,7 +31,6 @@ Este proyecto fue desarrollado por las integrantes del **Grupo 5** de la asignat
 | Irene Guadalupe León Madrid           | LM24048 |
 | Ana Estefany Quintanilla de Ponce     | QP24002 |
 | Nayeli Saraí Santos Hernández         | SH24001 |
-| Katherine Valeria Zamora Valladares   | ZV22007 |
 
 ---
 
