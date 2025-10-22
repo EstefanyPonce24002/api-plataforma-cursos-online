@@ -40,8 +40,6 @@ Este proyecto fue desarrollado por las integrantes del **Grupo 5** de la asignat
 
 ---
 
-## 🛠️ Tecnologías y Entorno
-
 ## 🛠️ Tecnologías Utilizadas
 
 * **Lenguaje:** [Java](https://www.oracle.com/java/)
