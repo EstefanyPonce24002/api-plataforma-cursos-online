@@ -42,14 +42,17 @@ Este proyecto fue desarrollado por las integrantes del **Grupo 5** de la asignat
 
 ## 🛠️ Tecnologías y Entorno
 
-* **Lenguaje:** Java
-* **Sistema de Construcción:** Gradle
-* **IDE:** IntelliJ IDEA
-* **Base de Datos:** (Se configurará para este proyecto) 
-* **Control de Versiones:** Git & GitHub
-* **Librerías:** (Se configurarán para este proyecto)
-* Spring Web 
-* Spring Data JPA 
-* Lombok 
-* JUnit 5 (para pruebas unitarias) 
-* **Framework:** Spring Boot (se configurará para este proyecto)
+## 🛠️ Tecnologías Utilizadas
+
+* **Lenguaje:** [Java](https://www.oracle.com/java/)
+* **Sistema de Construcción:** [Gradle](https://gradle.org/)
+* **IDE:** [IntelliJ IDEA](https://www.jetbrains.com/idea/)
+* **Base de Datos:** [PostgreSQL](https://www.postgresql.org/)
+* **Control de Versiones:** [Git](https://git-scm.com/) & [GitHub](https://github.com/)
+* **Librerías:** *(Se configurarán para este proyecto)*
+  * [Spring Web](https://spring.io/projects/spring-framework)
+  * [Spring Data JPA](https://spring.io/projects/spring-data-jpa)
+  * [Lombok](https://projectlombok.org/)
+  * [JUnit 5](https://junit.org/junit5/) *(para pruebas unitarias)*
+* **Framework:** [Spring Boot](https://spring.io/projects/spring-boot)
+
