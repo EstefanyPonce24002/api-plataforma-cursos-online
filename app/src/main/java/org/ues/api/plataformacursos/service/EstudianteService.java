@@ -6,6 +6,8 @@ import org.springframework.transaction.annotation.Transactional;
 import org.ues.api.plataformacursos.dto.EstudianteDTO;
 import org.ues.api.plataformacursos.model.Estudiante;
 import org.ues.api.plataformacursos.repository.EstudianteRepository;
+import org.ues.api.plataformacursos.exception.NotFoundException;
+import org.ues.api.plataformacursos.model.Curso; // Importación necesaria para mapear CursosIds
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -23,14 +25,6 @@ public class EstudianteService {
         dto.setNombre(estudiante.getNombre());
         dto.setEmail(estudiante.getEmail());
         dto.setContrasena(estudiante.getContrasena());
-
-        // Mapear los cursos inscritos si la entidad Estudiante tiene esa relación
-        //if (estudiante.getCursosInscritos() != null) {
-        //  dto.setCursosIds(estudiante.getCursosInscritos().stream()
-        //        .filter(curso -> curso != null)
-        //      .map(Curso::getId)
-        //    .collect(Collectors.toList()));
-        //}
 
         return dto;
     }
