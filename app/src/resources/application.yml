@@ -3,8 +3,8 @@ spring:
     name: plataforma-cursos-online
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/plataforma_cursos
-    username: cursos_user
+    url: jdbc:postgresql://localhost:5432/plataforma_cursos1
+    username: usuario_cursos
     password: 123
     driver-class-name: org.postgresql.Driver
 
