@@ -12,7 +12,7 @@ public class EstudianteDTO {
     private String nombre;
     private String email;
     private String contrasena;
-    private String especialidad;
+    //private String especialidad;
 
     // Opcional: lista de inscripciones o cursos inscritos
     private List<Long> cursosIds;

@@ -28,8 +28,8 @@ dependencies {
     testAnnotationProcessor 'org.projectlombok:lombok'
 
     // --- Base de datos ---
-    runtimeOnly 'org.postgresql:postgresql'  // PostgreSQL para producción
-    runtimeOnly 'com.h2database:h2'          // H2 para pruebas y desarrollo
+    runtimeOnly 'org.postgresql:postgresql'  // PostgreSQL para pruebas
+    //runtimeOnly 'com.h2database:h2'          // H2 para pruebas y desarrollo
 
     // --- Pruebas ---
     testImplementation 'org.springframework.boot:spring-boot-starter-test'

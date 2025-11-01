@@ -1,6 +1,6 @@
 # Ignorar archivos y carpetas de Gradle
 .gradle/
-/build/
+build/
 
 # Ignorar archivos y carpetas del IDE IntelliJ
 .idea/

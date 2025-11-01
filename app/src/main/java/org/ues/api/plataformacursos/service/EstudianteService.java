@@ -25,12 +25,12 @@ public class EstudianteService {
         dto.setNombre(estudiante.getNombre());
         dto.setEmail(estudiante.getEmail());
         dto.setContrasena(estudiante.getContrasena());
+        //dto.setTipoUsuario(estudiante.getTipoUsuario());
 
         return dto;
     }
 
     // MÉTODOS CRUD
-
     //Listar todos los estudiantes registrados
     @Transactional(readOnly = true) // Optimización para métodos de solo lectura
     public List<EstudianteDTO> listarEstudiantes() {
@@ -92,9 +92,7 @@ public class EstudianteService {
         estudianteRepository.deleteById(id);
     }
 
-
     // MÉTODOS DE BÚSQUEDA ADICIONALES
-
     //Implementación del método de búsqueda por email (devuelve DTO).
     @Transactional(readOnly = true)
     public EstudianteDTO buscarPorEmail(String email) {
