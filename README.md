@@ -21,6 +21,34 @@ torno a las siguientes clases principales:
 
 ---
 
+## 🛠️ Estructura del Proyecto
+
+<img width="514" height="515" alt="image" src="https://github.com/user-attachments/assets/a68cfd04-2a6a-4304-a27b-df155bbdae2b" />
+
+La imagen a continuación muestra el árbol de directorios principal del proyecto Spring Boot/Gradle, destacando la convención de paquetes (folders) utilizada para organizar el código en capas:
+
+![Árbol de directorios de la aplicación Spring Boot. Muestra los folders `build`, `src/main/java/org.ues.api.plataformacursos` y sus subcarpetas `controller`, `dto`, `exception`, `model`, `repository`, `service`.]
+
+| Directorio | Descripción |
+| :--- | :--- |
+| `controller` | Contiene las clases **REST Controllers** (`@RestController`) que manejan las peticiones HTTP (los *endpoints* de la API). |
+| `dto` | Contiene los **Data Transfer Objects** (DTOs) usados para enviar y recibir datos a través de los *endpoints*. |
+| `exception` | Clases personalizadas para manejar errores y excepciones de la aplicación. |
+| `model` | Contiene las clases de las entidades del dominio (`@Entity`), como `Usuario`, `Curso`, etc. |
+| `repository` | Interfaces que extienden `JpaRepository` para la comunicación con la base de datos (capa de persistencia). |
+| `service` | Contiene la lógica de negocio central de la aplicación. Es la capa intermedia entre el controlador y el repositorio. |
+| `resources` | Contiene el archivo de configuración principal (`application.yml` o `application.properties`). |
+| `build.gradle` | Archivo de configuración para el sistema de construcción **Gradle**, donde se definen las dependencias. |
+
+El proyecto sigue una arquitectura común en Spring Boot, estructurada en capas:
+
+1.  **`model` / `entity`**: Contiene las clases POO (`Usuario`, `Curso`, etc.) que representan las entidades de la base de datos.
+2.  **`repository`**: Interfaces que extienden `JpaRepository` para la interacción directa con la base de datos (CRUD).
+3.  **`service`**: Contiene la lógica de negocio y coordina las operaciones del repositorio.
+4.  **`controller`**: Define los *endpoints* REST (URLs) que exponen la funcionalidad de la API.
+
+---
+
 ## Endpoints Principales
 
 ### 👩‍🎓 Endpoints para Estudiantes
