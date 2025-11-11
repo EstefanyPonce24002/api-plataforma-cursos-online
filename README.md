@@ -21,6 +21,15 @@ torno a las siguientes clases principales:
 
 ---
 
+## Endpoints Principales
+
+### 📚 Cursos
+POST /api/cursos → Crear curso
+GET /api/cursos → Listar cursos
+GET /api/cursos/{id} → Obtener curso por ID
+PUT /api/cursos/{id} → Actualizar curso
+DELETE /api/cursos/{id} → Eliminar curso
+
 ## 👥 Integrantes del Equipo
 
 Este proyecto fue desarrollado por las integrantes del **Grupo 5** de la asignatura de Programación Orientada a Objetos:
