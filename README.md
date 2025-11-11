@@ -126,6 +126,35 @@ librerías necesarias para compilar, ejecutar y probar la API.
 | **Dependencies** | Incluye los *starters* clave de Spring Boot para crear la **API REST** (`spring-boot-starter-web`), la capa de persistencia con **JPA** (`spring-boot-starter-data-jpa`) y el controlador de la base de datos **PostgreSQL**. |
 | **Lombok** | Se configura como librería de compilación para reducir el código repetitivo (getters, setters, etc.). |
 
+---
+
+### 🚀 Pruebas y Consumo de la API (Postman)
+
+Para interactuar, probar y consumir los diferentes *endpoints* de esta API (como el registro de usuarios, la creación de cursos o la inscripción), se recomienda utilizar la herramienta **Postman**.
+
+| Característica | Propósito |
+| :--- | :--- |
+| **URL Base** | El acceso a la API se realiza a través de `http://localhost:8080/` |
+| **Métodos** | Se utiliza para enviar peticiones con los métodos HTTP correspondientes: **POST** (crear), **GET** (consultar), **PUT** (actualizar) y **DELETE** (eliminar). |
+| **Colección** | Se recomienda crear una colección en Postman para organizar los *endpoints* de Usuarios, Cursos e Inscripciones. |
+
+<img width="454" height="865" alt="image" src="https://github.com/user-attachments/assets/d7880873-0fe3-416e-9c93-383cfcd7e6a5" />
+
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+* **Lenguaje:** [Java](https://www.oracle.com/java/)
+* **Sistema de Construcción:** [Gradle](https://gradle.org/)
+* **IDE:** [IntelliJ IDEA](https://www.jetbrains.com/idea/)
+* **Base de Datos:** [PostgreSQL](https://www.postgresql.org/)
+* **Control de Versiones:** [Git](https://git-scm.com/) & [GitHub](https://github.com/)
+* **Librerías:**
+  * [Spring Web](https://spring.io/projects/spring-framework)
+  * [Spring Data JPA](https://spring.io/projects/spring-data-jpa)
+  * [Lombok](https://projectlombok.org/)
+  * [JUnit 5](https://junit.org/junit5/) *(para pruebas unitarias)*
+* **Framework:** [Spring Boot](https://spring.io/projects/spring-boot)
 
 ---
 
@@ -145,22 +174,6 @@ Este proyecto fue desarrollado por las integrantes del **Grupo 5** de la asignat
 ## 👥 Tutor Asignado
 
 **| GT02 Ing. Erick Adiel Trigueros Jerez |**
-
----
-
-## 🛠️ Tecnologías Utilizadas
-
-* **Lenguaje:** [Java](https://www.oracle.com/java/)
-* **Sistema de Construcción:** [Gradle](https://gradle.org/)
-* **IDE:** [IntelliJ IDEA](https://www.jetbrains.com/idea/)
-* **Base de Datos:** [PostgreSQL](https://www.postgresql.org/)
-* **Control de Versiones:** [Git](https://git-scm.com/) & [GitHub](https://github.com/)
-* **Librerías:**
-  * [Spring Web](https://spring.io/projects/spring-framework)
-  * [Spring Data JPA](https://spring.io/projects/spring-data-jpa)
-  * [Lombok](https://projectlombok.org/)
-  * [JUnit 5](https://junit.org/junit5/) *(para pruebas unitarias)*
-* **Framework:** [Spring Boot](https://spring.io/projects/spring-boot)
 
 ---
 
