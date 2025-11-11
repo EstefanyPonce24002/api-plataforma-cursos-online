@@ -144,7 +144,7 @@ Este proyecto fue desarrollado por las integrantes del **Grupo 5** de la asignat
 
 ## 👥 Tutor Asignado
 
-| Ing. Erick Adiel Trigueros Jerez | 
+**| GT02 Ing. Erick Adiel Trigueros Jerez |**
 
 ---
 
@@ -161,4 +161,14 @@ Este proyecto fue desarrollado por las integrantes del **Grupo 5** de la asignat
   * [Lombok](https://projectlombok.org/)
   * [JUnit 5](https://junit.org/junit5/) *(para pruebas unitarias)*
 * **Framework:** [Spring Boot](https://spring.io/projects/spring-boot)
+
+---
+
+## 🏛️ Información Institucional
+
+| | |
+| :--- | :--- |
+| **UNIVERSIDAD DE EL SALVADOR** | **INGENIERÍA EN DESARROLLO DE SOFTWARE - 2025** | 
+
+---
 
