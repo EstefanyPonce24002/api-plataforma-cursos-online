@@ -25,11 +25,15 @@ torno a las siguientes clases principales:
 
 <img width="514" height="515" alt="image" src="https://github.com/user-attachments/assets/a68cfd04-2a6a-4304-a27b-df155bbdae2b" />
 
+---
+
 La imagen anterior muestra el árbol de directorios principal del proyecto Spring Boot/Gradle, destacando la convención de paquetes (folders) utilizada para organizar el código en capas:
 
 !Árbol de directorios de la aplicación Spring Boot. Muestra los folders `build`, `src/main/java/org.ues.api.plataformacursos` y sus subcarpetas `controller`, `dto`, `exception`, `model`, `repository`, `service`.]
 
 El proyecto sigue una arquitectura común en Spring Boot, estructurada en capas:
+
+---
 
 | Directorio | Descripción |
 | :--- | :--- |
