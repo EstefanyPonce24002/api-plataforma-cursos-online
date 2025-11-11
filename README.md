@@ -82,9 +82,9 @@ El proyecto sigue una arquitectura común en Spring Boot, estructurada en capas:
 
 ---
 
-### Configuraciones Clave
+## Configuraciones Clave
 
-## ⚙️ Configuración de la Base de Datos (`application.yml`)
+### ⚙️ Configuración de la Base de Datos (`application.yml`)
 
 El archivo `application.yml` centraliza la configuración del entorno, asegurando la comunicación entre la API de Spring Boot y la base de datos **PostgreSQL**,
 mostrando el puerto 8080, los datos de la URL, usuario y contraseña (definidos por el usuario), y las propiedades de Hibernate DDL-Auto update.
