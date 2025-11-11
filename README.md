@@ -100,6 +100,7 @@ librerías necesarias para compilar, ejecutar y probar la API.
 
 <img width="713" height="759" alt="image" src="https://github.com/user-attachments/assets/bf7618f3-48e7-4ca8-92cf-61b319edeb81" />
 
+---
 
 | Sección | Descripción |
 | :--- | :--- |
@@ -107,7 +108,6 @@ librerías necesarias para compilar, ejecutar y probar la API.
 | **`java`** | Especifica que el código fuente debe compilarse usando la versión **Java 21**. |
 | **Dependencies** | Incluye los *starters* clave de Spring Boot para crear la **API REST** (`spring-boot-starter-web`), la capa de persistencia con **JPA** (`spring-boot-starter-data-jpa`) y el controlador de la base de datos **PostgreSQL**. |
 | **Lombok** | Se configura como librería de compilación para reducir el código repetitivo (getters, setters, etc.). |
-
 
 
 ---
