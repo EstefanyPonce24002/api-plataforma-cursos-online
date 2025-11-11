@@ -29,7 +29,6 @@ torno a las siguientes clases principales:
 
 La imagen anterior muestra el árbol de directorios principal del proyecto Spring Boot/Gradle, destacando la convención de paquetes (folders) utilizada para organizar el código en capas:
 
-!Árbol de directorios de la aplicación Spring Boot. Muestra los folders `build`, `src/main/java/org.ues.api.plataformacursos` y sus subcarpetas `controller`, `dto`, `exception`, `model`, `repository`, `service`.]
 
 El proyecto sigue una arquitectura común en Spring Boot, estructurada en capas:
 
@@ -80,6 +79,17 @@ El proyecto sigue una arquitectura común en Spring Boot, estructurada en capas:
 * GET /api/inscripciones/{id} → Obtener inscripción por ID
 * PUT /api/inscripciones/{id}/cancelar → Cancelar inscripción
 * DELETE /api/inscripciones/{id} → Eliminar inscripción por ID
+
+---
+
+### Configuraciones Clave
+
+## ⚙️ Configuración de la Base de Datos (`application.yml`)
+
+El archivo `application.yml` centraliza la configuración del entorno, asegurando la comunicación entre la API de Spring Boot y la base de datos **PostgreSQL**,
+mostrando el puerto 8080, los datos de la URL, usuario y contraseña (definidos por el usuario), y las propiedades de Hibernate DDL-Auto update.
+
+<img width="589" height="758" alt="image" src="https://github.com/user-attachments/assets/3142f501-fa61-4a44-b2fd-ffd9c87f9825" />
 
 ---
 
