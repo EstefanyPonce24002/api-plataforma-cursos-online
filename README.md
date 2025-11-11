@@ -23,13 +23,36 @@ torno a las siguientes clases principales:
 
 ## Endpoints Principales
 
+### 👩‍🎓 Endpoints para Estudiantes
+
+* POST /api/estudiantes → Crear un nuevo estudiante
+* GET /api/estudiantes → Listar todos los estudiantes
+* GET /api/estudiantes/{id} → Obtener estudiante por ID
+* PUT /api/estudiantes/{id} → Actualizar datos de un estudiante
+* DELETE /api/estudiantes/{id} → Eliminar estudiante
+
+### 👨‍🏫 Endpoints para Instructores
+
+* POST /api/instructores → Registrar un nuevo instructor
+* GET /api/instructores → Listar todos los instructores
+* GET /api/instructores/{id} → Obtener instructor por ID
+* PUT /api/instructores/{id} → Actualizar datos de un instructor
+* DELETE /api/instructores/{id} → Eliminar instructor
+
 ### 📚 Cursos
 * POST /api/cursos → Crear curso
 * GET /api/cursos → Listar cursos
 * GET /api/cursos/{id} → Obtener curso por ID
-* PUT /api/cursos/{id} → Actualizar curso
-* DELETE /api/cursos/{id} → Eliminar curso
+* PUT /api/cursos/{id} → Actualizar curso por ID
+* DELETE /api/cursos/{id} → Eliminar curso por ID
 
+### 📝 Inscripciones
+
+* POST /api/inscripciones → Crear inscripción 
+* GET /api/inscripciones → Listar inscripciones
+* GET /api/inscripciones/{id} → Obtener inscripción por ID
+* PUT /api/inscripciones/{id}/cancelar → Cancelar inscripción
+* DELETE /api/inscripciones/{id} → Eliminar inscripción por ID
 
 ---
 
