@@ -21,6 +21,23 @@ torno a las siguientes clases principales:
 
 ---
 
+## 🗺️ Diseño de la Base de Datos (Modelo Entidad-Relación)
+
+La imagen presenta el **Modelo Entidad-Relación (MER)** del proyecto, donde se definen las tres tablas principales y sus relaciones dentro del esquema `public` de **PostgreSQL**.
+
+<img width="796" height="716" alt="image" src="https://github.com/user-attachments/assets/80bb9baa-6b02-4994-92a9-e06b2de085a6" />
+
+### Tablas y Relaciones Clave
+
+| Tabla | Atributos Principales | Relación con otras Tablas |
+| :--- | :--- | :--- |
+| **`usuarios`** | `id`, `nombre`, `email`, `contrasena`, `tipo_usuario` (corresponde a los roles: Estudiante o Instructor). | Relación **uno a muchos** (`1:N`) con `cursos` (un usuario es instructor de muchos cursos) y con `inscripciones` (un usuario es estudiante de muchas inscripciones). |
+| **`cursos`** | `id`, `titulo`, `descripcion`, `estado`. Incluye la llave foránea `id_instructor`. | Relación **uno a muchos** (`1:N`) con `inscripciones` (un curso tiene muchas inscripciones). |
+| **`inscripciones`** | `id`, `estado`, `fecha_inscripcion`. Sirve como tabla de relación *muchos a muchos* e incluye las llaves foráneas `id_curso` e `id_estudiante`. | Relación **muchos a uno** (`N:1`) tanto con la tabla `cursos` como con la tabla `usuarios`. |
+
+
+---
+
 ## 🛠️ Estructura del Proyecto
 
 <img width="514" height="515" alt="image" src="https://github.com/user-attachments/assets/a68cfd04-2a6a-4304-a27b-df155bbdae2b" />
