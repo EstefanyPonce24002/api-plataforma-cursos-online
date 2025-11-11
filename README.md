@@ -93,6 +93,25 @@ mostrando el puerto 8080, los datos de la URL, usuario y contraseña (definidos 
 
 ---
 
+### ⚙️ Configuración de Construcción (`build.gradle`)
+
+El archivo `build.gradle` es el script de configuración principal para **Gradle**, el sistema de construcción del proyecto. Define las tecnologías clave y las 
+librerías necesarias para compilar, ejecutar y probar la API.
+
+<img width="713" height="759" alt="image" src="https://github.com/user-attachments/assets/bf7618f3-48e7-4ca8-92cf-61b319edeb81" />
+
+
+| Sección | Descripción |
+| :--- | :--- |
+| **Plugins** | Define el uso de **Java** y los plugins esenciales de **Spring Boot** e **`io.spring.dependency-management`**. |
+| **`java`** | Especifica que el código fuente debe compilarse usando la versión **Java 21**. |
+| **Dependencies** | Incluye los *starters* clave de Spring Boot para crear la **API REST** (`spring-boot-starter-web`), la capa de persistencia con **JPA** (`spring-boot-starter-data-jpa`) y el controlador de la base de datos **PostgreSQL**. |
+| **Lombok** | Se configura como librería de compilación para reducir el código repetitivo (getters, setters, etc.). |
+
+
+
+---
+
 ## 👥 Integrantes del Equipo
 
 Este proyecto fue desarrollado por las integrantes del **Grupo 5** de la asignatura de Programación Orientada a Objetos:
