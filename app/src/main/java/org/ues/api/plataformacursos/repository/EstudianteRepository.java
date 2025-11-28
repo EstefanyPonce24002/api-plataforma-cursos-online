@@ -12,5 +12,8 @@ public interface EstudianteRepository extends JpaRepository<Estudiante, Long> {
     // Método personalizado para buscar un estudiante por su email
     Estudiante findByEmail(String email);
 
+/*EstudianteRepository centraliza toda la interacción con la tabla de estudiantes. Gracias a JpaRepository obtenemos
+operaciones CRUD automáticamente y, con findByEmail, podemos validar usuarios de forma rápida y sin consultas
+SQL manuales*/
 }
 

@@ -14,4 +14,8 @@ public class InstructorDTO {
 
     // Opcional: para que muestre los cursos que imparte el instructor
     private List<Long> cursosIds;
+
+    /*Este DTO maneja la información principal de un instructor, como id, nombre, email y contraseña. También puede
+    incluir la lista de cursos que imparte, representados por sus IDs. Se utiliza para enviar y recibir datos del
+    instructor en la API sin exponer directamente la entidad de la base de datos.*/
 }

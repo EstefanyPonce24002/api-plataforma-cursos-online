@@ -9,6 +9,11 @@ import jakarta.validation.Valid; //validar automáticamente los datos recibidos
 
 import java.util.List;
 
+ /*Este controlador maneja todas las peticiones HTTP de cursos en la API. Define los endpoints para crear, obtener,
+  listar con filtros, actualizar y eliminar cursos. Se conecta con el CursoService para ejecutar la lógica del negocio
+  y devuelve las respuestas en formato JSON con los códigos HTTP correctos. También valida los datos de entrada
+  usando @Valid.*/
+
 @RestController         //Indica que esta clase responde a peticiones HTTP y devuelve datos en formato JSON
 @RequestMapping("/api/cursos") //Define la ruta base para todas las operaciones relacionadas con cursos.
 public class CursoController {
@@ -81,5 +86,6 @@ public class CursoController {
     public ResponseEntity<Void> eliminarCurso(@PathVariable Long id) {
         cursoService.eliminarCurso(id);
         return ResponseEntity.noContent().build();
+
     }
 }

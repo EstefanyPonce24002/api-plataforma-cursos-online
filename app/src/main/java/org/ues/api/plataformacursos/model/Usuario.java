@@ -43,5 +43,9 @@ public abstract class Usuario {
         this.email = email;
         this.contrasena = contrasena;
         this.rol = rol; // El rol se establece aquí para el constructor completo.
+
+    /*Usuario es una entidad abstracta que centraliza los atributos comunes de todos los usuarios. Se usa herencia en una
+    sola tabla para optimizar consultas, y el tipo_usuario se controla con un discriminador que garantiza que cada
+    registro esté asociado al tipo correcto.*/
     }
 }

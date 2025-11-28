@@ -118,3 +118,6 @@ public class CursoService {
                 .collect(Collectors.toList());
     }
 }
+/*Gestiona la lógica de negocio de los cursos: valida instructores antes de crear, convierte entre Entidad ↔ DTO,
+ obtiene y lista cursos desde la BD, actualiza datos y relaciones con instructores, elimina cursos por ID y permite
+  búsquedas específicas por instructor, título o estado*/

@@ -104,3 +104,6 @@ public class EstudianteService {
         return convertirADTO(estudiante);
     }
 }
+/*Administra toda la gestión de estudiantes: convierte entidades ↔ DTO, lista y obtiene estudiantes por ID, valida
+duplicados al crear, actualiza datos y contraseña cuando aplica, elimina verificando existencia y permite búsqueda
+ directa por email. Maneja correctamente errores mediante NotFoundException y optimiza consultas de solo lectura.*/

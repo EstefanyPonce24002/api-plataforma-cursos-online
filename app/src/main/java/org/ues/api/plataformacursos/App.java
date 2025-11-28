@@ -5,7 +5,7 @@ package org.ues.api.plataformacursos;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
+// La anotación le dice a Spring que aquí empieza la aplicación.
 @SpringBootApplication
 public class App {
     public static void main(String[] args) {
@@ -16,6 +16,10 @@ public class App {
         System.out.println("--- Plataforma de Cursos API ha iniciado correctamente.       ---");
         System.out.println("--- Acceso principal: http://localhost:8080/api/              ---");
         System.out.println("-----------------------------------------------------------------");
+
+    /*Esta es la clase principal que arranca toda la API. La anotación `@SpringBootApplication` indica el punto de inicio
+    del proyecto, y `SpringApplication.run()` pone en marcha el servidor de Spring Boot. Además, muestra un mensaje en
+    consola confirmando que la plataforma está lista para usarse.*/
     }
 }
 

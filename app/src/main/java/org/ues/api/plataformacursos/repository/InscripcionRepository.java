@@ -5,4 +5,8 @@ import org.ues.api.plataformacursos.model.Inscripcion;
 
 // Permite manejar las inscripciones directamente con los métodos estándar de Spring Data JPA.
 public interface InscripcionRepository extends JpaRepository<Inscripcion, Long> {
+
 }
+
+/*InscripcionRepository nos da todo lo necesario para gestionar inscripciones sin escribir SQL manual. Gracias a
+JpaRepository, el CRUD completo ya viene listo.*/

@@ -11,18 +11,20 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/inscripciones") //Ruta base del controlador,
 @RequiredArgsConstructor
+
+/*Este controlador administra las inscripciones de estudiantes en cursos: crear, obtener por ID, listar, cancelar y
+eliminar. Devuelve los estados HTTP correctos y usa InscripcionService para toda la lógica, manteniendo el controlador
+enfocado únicamente en exponer la API REST.*/
+
 public class InscripcionController {
 
     private final InscripcionService inscripcionService;
 
     // CREAR inscripción (estudiante se inscribe en un curso)
     // Se usa 201 Created para indicar la creación exitosa de un recurso.
-    @PostMapping("/{estudianteId}/{cursoId}")
-    public ResponseEntity<InscripcionDTO> crearInscripcion(
-            @PathVariable Long estudianteId,
-            @PathVariable Long cursoId) {
-        InscripcionDTO nuevaInscripcion = inscripcionService.crearInscripcion(estudianteId, cursoId);
-
+    @PostMapping
+    public ResponseEntity<InscripcionDTO> crearInscripcion(@RequestBody InscripcionDTO inscripcionDTO) {
+        InscripcionDTO nuevaInscripcion = inscripcionService.crearInscripcionDesdeDTO(inscripcionDTO);
         return new ResponseEntity<>(nuevaInscripcion, HttpStatus.CREATED);
     }
 

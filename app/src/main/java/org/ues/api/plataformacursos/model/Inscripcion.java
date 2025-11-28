@@ -11,6 +11,10 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString(exclude = {"estudiante", "curso"}) // Excluir relaciones para evitar errores de pila
+
+/*La entidad Inscripción funciona como una tabla intermedia que relaciona cursos y estudiantes. Lleva su propio estado
+y fecha de registro, y usa carga diferida para optimizar las consultas.*/
+
 public class Inscripcion {
 
     @Id

@@ -16,4 +16,8 @@ public class EstudianteDTO {
 
     // Opcional: lista de inscripciones o cursos inscritos
     private List<Long> cursosIds;
+
+    /*Este DTO representa la información del estudiante que se intercambia con el cliente, incluyendo id, nombre, email
+     y contraseña. También puede contener los cursos asociados mediante una lista de IDs. La anotación `@Data` genera
+     automáticamente los métodos necesarios, haciendo el código más limpio y fácil de mantener.*/
 }
