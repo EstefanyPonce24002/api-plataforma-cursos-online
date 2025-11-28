@@ -117,6 +117,8 @@ librerías necesarias para compilar, ejecutar y probar la API.
 
 <img width="713" height="759" alt="image" src="https://github.com/user-attachments/assets/bf7618f3-48e7-4ca8-92cf-61b319edeb81" />
 
+<img width="898" height="365" alt="image" src="https://github.com/user-attachments/assets/9ef829b6-420d-481c-a0f5-cc6086d4f796" />
+
 ---
 
 | Sección | Descripción |
@@ -139,7 +141,6 @@ Para interactuar, probar y consumir los diferentes *endpoints* de esta API (como
 | **Colección** | Se recomienda crear una colección en Postman para organizar los *endpoints* de Usuarios, Cursos e Inscripciones. |
 
 <img width="454" height="865" alt="image" src="https://github.com/user-attachments/assets/d7880873-0fe3-416e-9c93-383cfcd7e6a5" />
-<img width="898" height="365" alt="image" src="https://github.com/user-attachments/assets/9ef829b6-420d-481c-a0f5-cc6086d4f796" />
 
 
 ---
