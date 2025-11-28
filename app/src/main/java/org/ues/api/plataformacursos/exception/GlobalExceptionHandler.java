@@ -12,6 +12,10 @@ import org.springframework.web.bind.annotation.RestControllerAdvice; // Conviert
 en las respuestas de la API*/
 import java.util.HashMap;
 import java.util.Map;
+/*Este manejador global de excepciones mejora la API devolviendo errores claros y con el código HTTP correcto.
+Controla validaciones inválidas (400), recursos no encontrados como IDs inexistentes (404), conflictos de negocio como
+emails duplicados (409), y cualquier error inesperado del servidor (500). Así se garantiza que el cliente siempre reciba
+una respuesta comprensible y estandarizada ante fallos.*/
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {

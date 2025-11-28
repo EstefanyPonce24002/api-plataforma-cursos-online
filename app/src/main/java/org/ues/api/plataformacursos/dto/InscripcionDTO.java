@@ -4,6 +4,10 @@ import lombok.Data;
 import jakarta.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 
+/*Este DTO representa los datos de una inscripción entre estudiante y curso. Incluye el ID, estado, fecha de inscripción
+y los identificadores del estudiante y del curso. Aplica validaciones para asegurar que ambos IDs sean obligatorios
+antes de procesar la solicitud. Sirve como objeto seguro para la comunicación entre el cliente y la API.*/
+
 @Data
 public class InscripcionDTO {
 

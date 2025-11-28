@@ -10,4 +10,8 @@ public class CursoDTO {
     private String descripcion;
     private String estado;
     private Long idInstructor;
+
+    /*Este DTO se usa para transferir la información esencial del curso entre el cliente y el servidor. Incluye el id,
+    título, descripción, estado y el instructor relacionado. Gracias a @Data, se generan automáticamente los métodos
+    necesarios sin escribir código extra.*/
 }

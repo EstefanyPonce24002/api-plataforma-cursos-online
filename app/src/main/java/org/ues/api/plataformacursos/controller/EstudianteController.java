@@ -10,6 +10,10 @@ import org.ues.api.plataformacursos.service.EstudianteService;
 
 import java.util.List;
 
+/*Este controlador expone los endpoints REST para gestionar estudiantes: crear, listar, buscar por email, obtener por ID,
+ actualizar y eliminar. Recibe y devuelve datos mediante EstudianteDTO y responde con los estados HTTP correctos.
+ Usa @RequiredArgsConstructor para inyectar automáticamente el servicio que realiza la lógica de negocio.*/
+
 @RestController
 @RequestMapping("/api/estudiantes")
 @RequiredArgsConstructor

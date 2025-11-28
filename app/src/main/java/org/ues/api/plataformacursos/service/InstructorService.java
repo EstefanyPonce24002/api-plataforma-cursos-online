@@ -25,9 +25,7 @@ public class InstructorService {
     // MÉTODOS DE MAPEO (Entidad <-> DTO)
     // ===========================================
 
-    /**
-     * Convierte una entidad Instructor a su DTO correspondiente.
-     */
+    // Convierte una entidad Instructor a su DTO correspondiente.
     private InstructorDTO convertirADTO(Instructor instructor) {
         InstructorDTO dto = new InstructorDTO();
         dto.setId(instructor.getId());
@@ -49,9 +47,7 @@ public class InstructorService {
     // MÉTODOS CRUD (Ahora devuelven DTOs)
     // ===========================================
 
-    /**
-     * Crear nuevo instructor (devuelve DTO).
-     */
+    // Crear nuevo instructor (devuelve DTO)
     public InstructorDTO crearInstructor(InstructorDTO dto) {
         // Opcional: Verificar si el email ya existe
         if (instructorRepo.findByNombre(dto.getEmail()) != null) {
@@ -67,9 +63,7 @@ public class InstructorService {
         return convertirADTO(instructorGuardado);
     }
 
-    /**
-     * Listar todos los instructores (devuelve DTOs).
-     */
+    //Listar todos los instructores (devuelve DTOs)
     @Transactional(readOnly = true)
     public List<InstructorDTO> listarInstructores() {
         return instructorRepo.findAll().stream()
@@ -77,9 +71,7 @@ public class InstructorService {
                 .collect(Collectors.toList());
     }
 
-    /**
-     * Obtener un instructor por su ID (devuelve DTO).
-     */
+    //Obtener un instructor por su ID (devuelve DTO)
     @Transactional(readOnly = true)
     public InstructorDTO obtenerInstructorPorId(Long id) {
         Instructor instructor = instructorRepo.findById(id)
@@ -87,9 +79,7 @@ public class InstructorService {
         return convertirADTO(instructor);
     }
 
-    /**
-     * Actualizar un instructor existente (devuelve DTO).
-     */
+    //Actualizar un instructor existente (devuelve DTO).
     public InstructorDTO actualizarInstructor(Long id, InstructorDTO dto) {
         Instructor instructor = instructorRepo.findById(id)
                 .orElseThrow(() -> new RuntimeException("Instructor no encontrado con ID: " + id));
@@ -101,9 +91,7 @@ public class InstructorService {
         return convertirADTO(instructorActualizado);
     }
 
-    /**
-     * Eliminar instructor.
-     */
+    //Eliminar instructor.
     public void eliminarInstructor(Long id) {
         // Se puede usar existsById para manejar mejor la excepción
         if (!instructorRepo.existsById(id)) {
@@ -116,9 +104,7 @@ public class InstructorService {
     // MÉTODOS DE BÚSQUEDA
     // ===========================================
 
-    /**
-     * Implementación del método de búsqueda por email (devuelve DTO).
-     */
+    //Implementación del método de búsqueda por email (devuelve DTO).
     @Transactional(readOnly = true)
     public InstructorDTO buscarPorEmail(String email) {
         Instructor instructor = instructorRepo.findByNombre(email);
@@ -129,3 +115,6 @@ public class InstructorService {
         return convertirADTO(instructor);
     }
 }
+/*Administra instructores: crea validando email único, lista todos, obtiene por ID, actualiza datos básicos y elimina
+si existe. Convierte entre entidad y DTO. Incluye búsqueda por email. Usa transacciones para mantener la integridad de
+la base de datos y lanza excepciones cuando el recurso no existe.*/

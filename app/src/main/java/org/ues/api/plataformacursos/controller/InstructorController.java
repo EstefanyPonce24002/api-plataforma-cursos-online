@@ -9,6 +9,10 @@ import jakarta.validation.Valid;
 
 import java.util.List;
 
+/*Este controlador maneja todas las operaciones HTTP para los instructores: crear, listar, buscar por email, obtener
+por ID, actualizar y eliminar. Usa DTOs para intercambiar datos de forma segura y ResponseEntity para devolver los códigos
+de estado apropiados. La lógica real queda delegada al servicio, manteniendo el controlador limpio y enfocado en la API.*/
+
 @RestController
 @RequestMapping("/api/instructores")
 public class InstructorController {

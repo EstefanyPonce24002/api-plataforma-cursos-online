@@ -17,5 +17,9 @@ public class Estudiante extends Usuario {
     // Constructor personalizado (para crear instancias sin usar el ID)
     public Estudiante(String nombre, String email, String contrasena) {
         super(nombre, email, contrasena, "ESTUDIANTE");
+
+    /*Estudiante es una subclase de Usuario. Aprovecha la herencia para evitar duplicar campos y usa @DiscriminatorValue
+    para que la base de datos sepa que este tipo de usuario es un estudiante. Es una entidad ligera y bien acoplada al
+    modelo de usuarios.*/
     }
 }
