@@ -1,3 +1,4 @@
+//INSCRIPCION CONTROLLER
 package org.ues.api.plataformacursos.controller;
 
 import lombok.RequiredArgsConstructor;
@@ -11,18 +12,16 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/inscripciones") //Ruta base del controlador,
 @RequiredArgsConstructor
+
 public class InscripcionController {
 
     private final InscripcionService inscripcionService;
 
     // CREAR inscripción (estudiante se inscribe en un curso)
     // Se usa 201 Created para indicar la creación exitosa de un recurso.
-    @PostMapping("/{estudianteId}/{cursoId}")
-    public ResponseEntity<InscripcionDTO> crearInscripcion(
-            @PathVariable Long estudianteId,
-            @PathVariable Long cursoId) {
-        InscripcionDTO nuevaInscripcion = inscripcionService.crearInscripcion(estudianteId, cursoId);
-
+    @PostMapping
+    public ResponseEntity<InscripcionDTO> crearInscripcion(@RequestBody InscripcionDTO inscripcionDTO) {
+        InscripcionDTO nuevaInscripcion = inscripcionService.crearInscripcionDesdeDTO(inscripcionDTO);
         return new ResponseEntity<>(nuevaInscripcion, HttpStatus.CREATED);
     }
 

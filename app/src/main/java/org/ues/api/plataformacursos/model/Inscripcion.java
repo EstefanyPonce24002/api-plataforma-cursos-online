@@ -2,6 +2,7 @@ package org.ues.api.plataformacursos.model;
 
 import jakarta.persistence.*;
 import lombok.*;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "inscripciones") // Especifica el nombre de la tabla.
@@ -9,6 +10,7 @@ import lombok.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString(exclude = {"estudiante", "curso"}) // Excluir relaciones para evitar errores de pila
 public class Inscripcion {
 
     @Id
@@ -16,16 +18,24 @@ public class Inscripcion {
     private Long id;
 
     // Relación con Estudiante
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY) // Usar LAZY para mejorar rendimiento
     @JoinColumn(name = "id_estudiante", nullable = false)
     private Estudiante estudiante;
 
     // Relación con Curso
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY) // Usar LAZY para mejorar rendimiento
     @JoinColumn(name = "id_curso", nullable = false)
     private Curso curso;
 
     // Estado de la inscripción
     @Column(nullable = false)
     private String estado; // Ej: "ACTIVA", "CANCELADA", "COMPLETADA"
+
+    @Column(name = "fecha_inscripcion", nullable = false)
+    private LocalDateTime fechaInscripcion;
+
+    @PrePersist
+    protected void onCreate() {
+        this.fechaInscripcion = LocalDateTime.now();
+    }
 }
