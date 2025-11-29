@@ -22,6 +22,8 @@ public class CursoController {
     // CREAR un nuevo curso
     // Se usa @Valid para activar las validaciones del DTO.
     // Devuelve 201 Created para indicar que el recurso fue creado exitosamente.
+
+
     @PostMapping
     public ResponseEntity<CursoDTO> crearCurso(@Valid @RequestBody CursoDTO dto) {
         CursoDTO nuevoCurso = cursoService.crearCurso(dto);

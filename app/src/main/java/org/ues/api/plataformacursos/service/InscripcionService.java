@@ -1,3 +1,5 @@
+//INSCRIPCION SERVICE
+
 package org.ues.api.plataformacursos.service;
 
 import lombok.RequiredArgsConstructor;
@@ -7,12 +9,15 @@ import org.ues.api.plataformacursos.dto.InscripcionDTO; // Importación del DTO
 import org.ues.api.plataformacursos.model.*;
 import org.ues.api.plataformacursos.repository.*;
 import org.ues.api.plataformacursos.exception.NotFoundException;
+
+import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
 @Transactional // Aplica transaccionalidad a todas las operaciones
+
 public class InscripcionService {
 
     private final InscripcionRepository inscripcionRepository;
@@ -35,19 +40,24 @@ public class InscripcionService {
 
     // OPERACIONES
     //Crear una nueva inscripción y devolver su DTO.
-    public InscripcionDTO crearInscripcion(Long idEstudiante, Long idCurso) {
-        // Validación de existencia
-        Estudiante estudiante = estudianteRepository.findById(idEstudiante)
-                .orElseThrow(() -> new NotFoundException("Estudiante no encontrado con id: " + idEstudiante));
+    public InscripcionDTO crearInscripcionDesdeDTO(InscripcionDTO dto) {
+        // Validar existencia de estudiante
+        Estudiante estudiante = estudianteRepository.findById(dto.getIdEstudiante())
+                .orElseThrow(() -> new NotFoundException("Estudiante no encontrado con id: " + dto.getIdEstudiante()));
 
-        Curso curso = cursoRepository.findById(idCurso)
-                .orElseThrow(() -> new NotFoundException("Curso no encontrado con id: " + idCurso));
+        // Validar existencia de curso
+        Curso curso = cursoRepository.findById(dto.getIdCurso())
+                .orElseThrow(() -> new NotFoundException("Curso no encontrado con id: " + dto.getIdCurso()));
 
+        // Crear entidad Inscripcion
         Inscripcion inscripcion = new Inscripcion();
         inscripcion.setEstudiante(estudiante);
         inscripcion.setCurso(curso);
-        inscripcion.setEstado("ACTIVA"); // Estado inicial
+        inscripcion.setEstado(dto.getEstado() != null ? dto.getEstado() : "ACTIVA");
+        inscripcion.setFechaInscripcion(LocalDate.parse(dto.getFechaInscripcion())); // si el DTO incluye fecha
 
+
+        // Guardar y retornar DTO
         Inscripcion inscripcionGuardada = inscripcionRepository.save(inscripcion);
         return convertirADTO(inscripcionGuardada);
     }

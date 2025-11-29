@@ -3,6 +3,8 @@ package org.ues.api.plataformacursos.model;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDate;
+
 @Entity
 @Table(name = "inscripciones") // Especifica el nombre de la tabla.
 @Getter
@@ -28,4 +30,7 @@ public class Inscripcion {
     // Estado de la inscripción
     @Column(nullable = false)
     private String estado; // Ej: "ACTIVA", "CANCELADA", "COMPLETADA"
+
+    @Column(name = "fecha_inscripcion", nullable = false)
+    private LocalDate fechaInscripcion;
 }

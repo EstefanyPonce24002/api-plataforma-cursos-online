@@ -17,5 +17,9 @@ public class App {
         System.out.println("--- Acceso principal: http://localhost:8080/api/              ---");
         System.out.println("-----------------------------------------------------------------");
     }
+
+    public Object getGreeting() {
+        return null;
+    }
 }
 
