@@ -60,6 +60,7 @@ El proyecto sigue una arquitectura común en Spring Boot, estructurada en capas:
 | `repository` | Interfaces que extienden `JpaRepository` para la comunicación con la base de datos (capa de persistencia). |
 | `service` | Contiene la lógica de negocio central de la aplicación. Es la capa intermedia entre el controlador y el repositorio. |
 | `resources` | Contiene el archivo de configuración principal (`application.yml` o `application.properties`). |
+| `test` | Contiene las pruebas unitarias y de integración desarrolladas con JUnit 5 para validar el correcto funcionamiento de los servicios, controladores y componentes de la aplicación antes del despliegue.              Aquí se aplican técnicas como Mocking con Mockito, pruebas de controladores con MockMvc, y verificación de reglas de negocio en la capa de servicios. |
 | `build.gradle` | Archivo de configuración para el sistema de construcción **Gradle**, donde se definen las dependencias. |
 
 ---
