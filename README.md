@@ -128,7 +128,7 @@ librerías necesarias para compilar, ejecutar y probar la API.
 | **`java`** | Especifica que el código fuente debe compilarse usando la versión **Java 21**. |
 | **Dependencies** | Incluye los *starters* clave de Spring Boot para crear la **API REST** (`spring-boot-starter-web`), la capa de persistencia con **JPA** (`spring-boot-starter-data-jpa`) y el controlador de la base de datos **PostgreSQL**. |
 | **Lombok** | Se configura como librería de compilación para reducir el código repetitivo (getters, setters, etc.). |
-| **test (JUnit5 & Mockito)** | Contiene las **pruebas unitarias y de integración** de la aplicación. Se utilizan las dependencias spring-boot-starter-test, **JUnit Jupiter (JUnit 5)** para ejecutar pruebas y -**Mockito** para simular dependencias (mocking) durante los tests. Las clases de prueba se ubican en `src/test/java`, manteniendo la misma estructura de paquetes que `src/main/java`. |
+| **test (JUnit5 & Mockito)** | Contiene las **pruebas unitarias y de integración** de la aplicación. Se utilizan las dependencias spring-boot-starter-test, **JUnit Jupiter (JUnit 5)** para ejecutar pruebas y **Mockito** para simular dependencias (mocking) durante los tests. Las clases de prueba se ubican en `src/test/java`, manteniendo la misma estructura de paquetes que `src/main/java`. |
 
 ---
 
